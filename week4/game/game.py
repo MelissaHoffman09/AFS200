@@ -2,6 +2,7 @@ import random
 num_random = random.randint(1, 9)
 exit = False
 count = 0
+
 while exit is False:
     num_guess = int(input("Guess a number between 1 and 9: "))
     if num_random < num_guess:
@@ -15,7 +16,7 @@ while exit is False:
         count += 1
         print("Guess Count:", count)
         break
-    exit = input("Press enter to continue or type exit: ")
+    exit = input("Press any key to continue or type exit to leave: ")
     if exit == "exit":
         print("Total Guess Count:", count)
         exit = True
